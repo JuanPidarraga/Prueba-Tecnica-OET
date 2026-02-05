@@ -7,6 +7,22 @@
     <title>@yield('title', 'ACME Transportes - Sistema de Gestión')</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @stack('styles')
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1 0 auto;
+        }
+        footer {
+            flex-shrink: 0;
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
     <!-- Navbar -->
@@ -68,7 +84,7 @@
     <footer class="bg-gray-800 text-white mt-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <div class="text-center">
-                <p>&copy; 2024 ACME Transportes S.A. - Sistema de Gestión de Vehículos</p>
+                <p>&copy; 2026 ACME Transportes S.A. - Sistema de Gestión de Vehículos</p>
                 <p class="text-sm text-gray-400 mt-2">Desarrollado con Laravel y Tailwind CSS</p>
             </div>
         </div>

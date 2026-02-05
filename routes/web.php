@@ -25,7 +25,9 @@ Route::get('/', function () {
 Route::resource('vehiculos', VehiculoController::class);
 
 // Rutas para Conductores
-Route::resource('conductores', ConductorController::class);
+Route::resource('conductores', ConductorController::class)->parameters([
+    'conductores' => 'conductor'
+]);
 
 // Rutas para Propietarios
 Route::resource('propietarios', PropietarioController::class);
